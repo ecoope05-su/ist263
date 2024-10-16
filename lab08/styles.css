@@ -30,3 +30,5 @@ nav a, nav a:visited { color:#f2f8f6; }
 
 
 nav a:hover { background-color:#C5D86D; }
+
+.float { float: right;}
