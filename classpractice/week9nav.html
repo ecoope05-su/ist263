@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wk 9 NavLecture Practice</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+   <style>
+        nav {background-color: #000000;
+        padding: 10px;
+        color: #ffffff;
+        display: flex;
+        }
+        
+        nav div {flex: 1;}
+       
+        .flexend{ justify-content: flex-end;}
+
+        .around{justify-content: space-around;}
+
+        .between{justify-content: space-between;}
+
+        .split{justify-content: space-between;}
+
+        .left{ display: flex; flex: 3;}
+
+        .right{ display: flex; flex: 1;}
+
+    </style>
+
+</head>
+
+<body>
+    
+    
+    <h1>Navigation 4 ways</h1>
+
+    <h2>Right Side</h2>
+
+    <nav class="flexend">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+    
+    <h2>Space Around</h2>
+    
+    <nav class="around">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+    <h2>Space Between</h2>
+    
+    <nav class="between">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+    <h2>Split</h2>
+    
+    <nav class="split">
+        <div class="left">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Products</div>
+            <div>Contact</div>
+        </div>
+        <div class="right">
+            <div>Facebook</div>
+            <div>X</div>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>
