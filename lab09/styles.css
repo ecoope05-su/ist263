@@ -36,3 +36,25 @@ nav a:hover { background-color:#C5D86D; }
 }
 
 .clear { clear: both; }
+
+.firstrow, .secondrow { 
+    display: flex; 
+    background-color:#ffffff; 
+    margin: 2em; 
+    border-radius: 20px;
+}
+
+
+.cell, .formcell, .mapcell, .skillstable, .skillsimage { padding: 25px; }
+
+.mapcell {flex: 1;}
+
+.formcell {flex: 2;}
+
+.centered {text-align: center;}
+
+.skillstable {flex: 1;}
+
+.skillstable table {margin: 0 auto;}
+
+.skillsimage {flex: 1; text-align: center;}
