@@ -60,6 +60,8 @@ nav a:hover { background-color:#C5D86D; }
 
 .scale { max-width: 100%; }
 
+form .formscale {width: 100%}
+
 @media only screen and (max-width:768px) {
     nav a { width: 100%; 
             display: block;
