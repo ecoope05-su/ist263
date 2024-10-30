@@ -44,12 +44,11 @@ nav a:hover { background-color:#C5D86D; }
     border-radius: 20px;
 }
 
+.secondrow { flex-wrap: wrap; }
 
 .cell, .formcell, .mapcell, .skillstable, .skillsimage { padding: 25px; }
 
-.mapcell {flex: 1;}
-
-.formcell {flex: 2;}
+.mapcell, .formcell {flex: 1;}
 
 .centered {text-align: center;}
 
@@ -58,3 +57,13 @@ nav a:hover { background-color:#C5D86D; }
 .skillstable table {margin: 0 auto;}
 
 .skillsimage {flex: 1; text-align: center;}
+
+.scale { max-width: 100%; }
+
+@media only screen and (max-width:768px) {
+    nav a { width: 100%; 
+            display: block;
+            margin: 1em 0;
+    }
+    nav span { display: none;}
+}
