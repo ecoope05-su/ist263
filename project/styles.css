@@ -17,7 +17,7 @@ img.header {
     width: 100%;
 }
 
-/*nav and footer styles*/
+/*nav and footer styles, functionality of haburger nav based on a w3 schools example*/
 
 nav, footer {
     background-color: rgb(0, 15, 159);
