@@ -9,7 +9,7 @@ h1 {
     font-size: 2em;
 }
 
-header, section.whatis {
+section.whatis {
     margin: 0 2em;
 }
 
@@ -24,11 +24,6 @@ nav, footer {
     color: white;
     box-sizing: border-box;
 }
-
-nav {
-    margin-bottom: 2em;
-}
-
 
 nav div.nav p {
     margin: 0;
@@ -200,13 +195,6 @@ div.flexright, div.flexleft {
 
 /*underground lines styles*/
 
-section.lines {
-    margin-top: 2em;
-    margin-bottom: 0;
-    padding: 1em 2em 2em 2em;
-    background-color: #f2f2f2;
-}
-
 section.lines div.flexbox{
     display: flex;
     flex-wrap: wrap;
@@ -219,25 +207,47 @@ section.lines div div {
     
 
 @media only screen and (max-width:850px) {
+    section.lines {
+        margin-top: 2em;
+        margin-bottom: 0;
+        padding: 1em 2em 0 2em;
+        background-color: #dfdfdf;
+    }
+
     section.lines div div {
         flex-basis: 100%;
         margin: 1em 0;
     }
+
+    section.lines div div.jubilee {
+        flex-basis: 100%;
+        margin: 1em 0 2em 0;
+    }
+    section.lines div div.blank {
+        display: none;
+    }
 }
 
 @media only screen and (min-width:850px) {
+    section.lines {
+        margin-top: 2em;
+        margin-bottom: 0;
+        padding: 1em 2em 2em 2em;
+        background-color: #dfdfdf;
+    }
+
     section.lines div div {
         flex-basis: 25%;
         box-sizing: border-box;
     }
 
     .metropolitan, .hammersmith, .circle, .waterloo, .central, .bakerloo, .northern, .victoria, .jubilee {
-        border-right: 1em solid #f2f2f2;
-        border-bottom: 1em solid #f2f2f2;
+        border-right: 1em solid #dfdfdf;
+        border-bottom: 1em solid #dfdfdf;
     }
 
     .district, .piccadilly {
-        border-bottom: 1em solid #f2f2f2;
+        border-bottom: 1em solid #dfdfdf;
     }
 }
 
