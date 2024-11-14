@@ -7,20 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vina+Sans&display=swap" rel="stylesheet">
 
     <title>The London Underground</title>
+
+    <script>
+        function hamburger() {
+          var x = document.getElementById("nav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+    </script>
+
 </head>
 
 <body>
     
     <nav>
-        <p>All About The London Underground</p>
-        <a href="index.html" class="onpage">Home</a>
-        <a href="facts.html">Facts</a>
-        <a href="map.html">The Tube Map</a>
+        
+        <div class="nav" id="nav">
+
+            <p>All About The London Underground</p>
+            <a href="index.html" class="onpage link" id="home">Home</a>
+            <a href="facts.html" class="link">Facts</a>
+            <a href="map.html" class="link">The Tube Map</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+              <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
     </nav>
 
 
