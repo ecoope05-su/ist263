@@ -1,0 +1,220 @@
+
+body {
+    font-family: "Cabin", Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: rgb(0, 15, 159);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    margin: 0 2em;
+}
+
+img.header {
+    width: 100%;
+}
+
+
+
+/*nav and footer styles*/
+
+nav, footer {
+    background-color: rgb(0, 15, 159);
+    color: white;
+    padding: 2em;
+}
+
+nav {
+    margin-bottom: 2em;
+    display: flex;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+nav p {
+    margin: 0;
+    flex: 7;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+footer p {
+    margin: 0;
+}
+
+nav a, nav a:visited {
+    color: white;
+    margin-left: 2em;
+    text-align: right;
+    text-decoration: none;
+}
+
+nav a.onpage {
+    color: rgb(255, 205, 0);
+}
+
+
+
+/*image and text flexboxes*/
+
+div.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.fleximgleft, div.fleximgright, div.flexleft, div.flexright{
+    flex: 1;
+}
+
+div.fleximgright img, div.fleximgleft img {
+    width: 100%;
+}
+
+div.flexleft {
+    padding-right: 2em;
+}
+
+div.flexright {
+    padding-left: 2em;
+}
+
+div.flexright, div.flexleft {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width:850px) {
+    section.whatis div div {
+        flex-basis: 100%;
+        margin: 1em 0;
+    }
+
+    section.whatis div div.flexright, section.whatis div div.flexleft {
+        padding: 0;
+        margin: 0;
+    }
+
+    section.whatis div div.fleximgleft, section.whatis div div.fleximgright {
+        flex-basis: 33%;
+    }
+    #overview {
+        order: 1;
+    }
+    #overviewimg {
+        order: 2;
+    }
+    #history {
+        order: 3;
+    }
+    #historyimg {
+        order: 4;
+    }
+    #join {
+        order: 5;
+    }
+    #joinimg {
+        order: 6;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    section.whatis div div  {
+        flex-basis: 50%;
+        box-sizing: border-box;
+    }
+}
+
+/*underground lines styles*/
+
+section.lines div.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.lines div div {
+    flex: 1;
+    padding: 1em 2em;
+}
+    
+
+@media only screen and (max-width:850px) {
+    section.lines div div {
+        flex-basis: 100%;
+        margin: 1em 0;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    section.lines div div {
+        flex-basis: 25%;
+        box-sizing: border-box;
+    }
+
+    .metropolitan, .hammersmith, .circle, .waterloo, .central, .bakerloo, .northern, .victoria, .jubilee {
+        border-right: 1em solid white;
+        border-bottom: 1em solid white;
+    }
+
+    .district, .piccadilly {
+        border-bottom: 1em solid white;
+    }
+}
+
+.metropolitan {
+    background-color: rgb(135, 15, 84);
+    color: white;
+}
+
+.hammersmith {
+    background-color: rgb(236, 155, 173);
+    color: rgb(0, 15, 159);
+}
+
+.circle {
+    background-color: rgb(255, 205, 0);
+    color: rgb(0, 15, 159);
+}
+
+.district {
+    background-color: rgb(0, 121, 52);
+    color: white;
+}
+
+.waterloo {
+    background-color: rgb(107, 205, 178);
+    color: rgb(0, 15, 159);
+}
+
+.central {
+    background-color: rgb(225, 37, 27);
+    color: white;
+}
+
+.bakerloo {
+    background-color: rgb(166, 90, 42);
+    color: white;
+}
+
+.piccadilly {
+    background-color: rgb(0, 15, 159);
+    color: white;
+}
+
+.northern {
+    background-color: black;
+    color: white;
+}
+
+.victoria {
+    background-color: rgb(0, 160, 223);
+    color: white;
+}
+
+.jubilee {
+    background-color: rgb(123, 134, 140);
+    color: white;
+}

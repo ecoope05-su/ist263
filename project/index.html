@@ -5,6 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vina+Sans&display=swap" rel="stylesheet">
+
     <title>The London Underground</title>
 </head>
 
@@ -12,126 +18,130 @@
     
     <nav>
         <p>All About The London Underground</p>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="onpage">Home</a>
         <a href="facts.html">Facts</a>
         <a href="map.html">The Tube Map</a>
     </nav>
 
 
-    <header>
+    <main>
 
-        <img src="projectimages/trainmotion.jpeg" alt="Tube train pulling out of a station">
+        <header>
+
+            <img src="projectimages/trainmotion.jpeg" alt="Tube train pulling out of a station" class="header">
+        
+        </header>
+
     
-    </header>
+        <section class="whatis">
 
+            <h1>What is the London Underground?</h1>
 
-    <section>
+            <div class="flexbox">
 
-        <h1>What is the London Underground?</h1>
+                <div class="flexleft" id="overview">
+                    <h2>Overview</h2>
+                    <p>The London Underground, also referred to as the Underground or the Tube, has been serving the city since it first opened the Metropolitan line in 1863. With just 8 stations, this humble rail line was the world’s first underground railway and is one of the key reasons the city has flourished in the modern era. Today, the Tube covers all nine zones of the city with 272 stations across 11 rail lines (tfl.gov).</p>
+                </div>
 
-        <div class="flexbox">
+                <div class="fleximgright" id="overviewimg">
+                    <img src="projectimages/underground1900.jpg" alt="Tube station in 1900">
+                </div>
 
-            <div class="flex">
-                <p>The London Underground, also referred to as the Underground or the Tube, has been serving the city since it first opened the Metropolitan line in 1863. With just 8 stations, this humble rail line was the world’s first underground railway and is one of the key reasons the city has flourished in the modern era. Today, the Tube covers all nine zones of the city with 272 stations across 11 rail lines (tfl.gov).</p>
+                <div class="fleximgleft" id="historyimg">
+                    <img src="projectimages/underground1930s.jpg" alt="Tube car in the 1930s"> 
+                </div>
+
+                <div class="flexright" id="history">
+                        <h2>A Brief History</h2>
+                        <p>For the first 50 years of the underground, the focus was expansion within the most central zones of the city. The next 50 years strove to fold the London suburbs into the transit network. The first new line through central London since the early days of the underground came with the Victoria Line in 1968. The Jubilee Line became the most recent addition to the network in 1979, and the 11 lines have continued growing ever since (tfl.gov). </p>                    
+                </div>
+
+                <div class="flexleft" id="join">
+                    <h2>Joining TfL</h2>
+                    <p>The Underground was privately owned by various rail companies until 2003, when it became a sub-brand of the publicly funded Transit for London (TfL). While the Elizabeth Line, which opened in 2022, is considered by many to be the most recent 12th line, it technically lives as its own entity under the TfL umbrella. While it connects with many tube lines, it is separated into distinct stations with underground passageways connecting Elizabeth Line stations to Underground Stations that share locations.</p>
+                </div>
+
+                <div class="fleximgright" id="joinimg">
+                    <img src="projectimages/canarywharf.png" alt="Escalator at Canary Wharf Station">
+                </div>
+                
             </div>
 
-            <div class="fleximg">
-                <img src="projectimages/underground1900.jpg" alt="Tube station in 1900">
-            </div>
+        </section>
 
-        </div>
 
-        <div class="flexbox">
+        <section class="lines">
 
-            <div class="fleximg">
-                <img src="projectimages/underground1930s.jpg" alt="Tube car in the 1930s"> 
-            </div>
+            <h1>The 11 Underground Lines</h1>
 
-            <div class="flex">
-                    <p>For the first 50 years of the underground, the focus was expansion within the most central zones of the city. The next 50 years strove to fold the London suburbs into the transit network. The first new line through central London since the early days of the underground came with the Victoria Line in 1968. The Jubilee Line became the most recent addition to the network in 1979, and the 11 lines have continued growing ever since (tfl.gov). </p>                    
-            </div>
+            <div class="flexbox">
 
-        </div>
+                <div class="metropolitan">
+                    <h3>Metropolitan Line</h3>
+                    <p>The original underground line and oldest in the world, opened January 10, 1863</p>
+                </div>
 
-        <div class="flexbox">
+                <div class="hammersmith">
+                    <h3>Hammersmith & City Line</h3>
+                    <p>First opened as a Metropolitan Line extension in 1864, became its own line in 1990</p>                   
+                </div>
 
-            <div class="flex">
-                <p>The Underground was privately owned by various rail companies until 2003, when it became a sub-brand of the publicly funded Transit for London (TfL). While the Elizabeth Line, which opened in 2022, is considered by many to be the most recent 12th line, it technically lives as its own entity under the TfL umbrella. While it connects with many tube lines, it is separated into distinct stations with underground passageways connecting Elizabeth Line stations to Underground Stations that share locations.</p>
-            </div>
+                <div class="circle">
+                   <span>
+                    <h3>Circle Line</h3>
+                    <p>First stations opened as a part of the Metropolitan District Railway in 1868, Finished in 1884</p>
+                    </span>
+                </div>
 
-            <div class="fleximg">
-                <img src="projectimages/canarywharf.png" alt="Escalator at Canary Wharf Station">
+                <div class="district">
+                    <h3>District Line</h3>
+                    <p>First opened alongside the predecessor to the Circle Line in 1868</p>
+                </div>
+
+                <div class="waterloo">
+                    <h3>Waterloo & City Line</h3>
+                    <p>First opened in 1898 as a private railway, joined the London Underground network in 1994</p>                   
+                </div>
+
+                <div class="central">
+                    <h3>Central Line</h3>
+                    <p>First opened as the Central London Railway, colloquially the “Twopenny Tube”, in 1900</p>
+                </div>
+
+                <div class="bakerloo">
+                    <h3>Bakerloo Line</h3>
+                    <p>First opened as the Baker Street & Waterloo Railway in 1906</p>
+                </div>
+
+                <div class="piccadilly">
+                    <h3>Piccadilly Line</h3>
+                    <p>First opened as the Great Northern, Piccadilly, & Brompton Railway in 1906</p>                   
+                </div>
+
+                <div class="northern">
+                    <h3>Northern Line</h3>
+                    <p>First opened as the Charing Cross, Euston, & Hampstead Railway in 1907</p>
+                </div>
+                
+                <div class="victoria">
+                    <h3>Victoria Line</h3>
+                    <p>First opened by Queen Elizabeth II in 1969</p>
+                </div>
+
+                <div class="jubilee">
+                    <h3>Jubilee Line</h3>
+                    <p>The most recent line, (Excluding the independent Elizabeth Line) first opened in 1979</p>                   
+                </div>
+                
+                <div class="blank"></div>
+
             </div>
             
-        </div>
 
-    </section>
+        </section>
 
-
-    <section>
-
-        <h1>The 11 Underground Lines</h1>
-
-        <div class="section2">
-
-            <div class="metropolitan">
-                <h3>Metropolitan Line</h3>
-                <p>The original underground line and oldest in the world, opened January 10, 1863</p>
-            </div>
-
-            <div class="hammersmith">
-                <h3>Hammersmith & City Line</h3>
-                <p>First opened as a Metropolitan Line extension in 1864, became its own line in 1990</p>                   
-            </div>
-
-            <div class="circle">
-                <h3>Circle Line</h3>
-                <p>First stations opened as a part of the Metropolitan District Railway in 1868, Finished in 1884</p>
-            </div>
-
-            <div class="district">
-                <h3>District Line</h3>
-                <p>First opened alongside the predecessor to the Circle Line in 1868</p>
-            </div>
-
-            <div class="waterloo">
-                <h3>Waterloo & City Line</h3>
-                <p>First opened in 1898 as a private railway, joined the London Underground network in 1994</p>                   
-            </div>
-
-            <div class="central">
-                <h3>Central Line</h3>
-                <p>First opened as the Central London Railway, colloquially the “Twopenny Tube”, in 1900</p>
-            </div>
-
-            <div class="bakerloo">
-                <h3>Bakerloo Line</h3>
-                <p>First opened as the Baker Street & Waterloo Railway in 1906</p>
-            </div>
-
-            <div class="piccadilly">
-                <h3>Piccadilly Line</h3>
-                <p>First opened as the Great Northern, Piccadilly, & Brompton Railway in 1906</p>                   
-            </div>
-
-            <div class="northern">
-                <h3>Northern Line</h3>
-                <p>First opened as the Charing Cross, Euston, & Hampstead Railway in 1907</p>
-            </div>
-            
-            <div class="victoria">
-                <h3>Victoria Line</h3>
-                <p>First opened by Queen Elizabeth II in 1969</p>
-            </div>
-
-            <div class="jubilee">
-                <h3>Jubilee Line</h3>
-                <p>The most recent line, (Excluding the independent Elizabeth Line) first opened in 1979</p>                   
-            </div>
-
-        </div>
-
-    </section>
+    </main>
 
     <footer>
 
