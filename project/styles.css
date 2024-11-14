@@ -67,9 +67,9 @@ div.flexbox {
     flex-wrap: wrap;
 }
 
-div.fleximgleft, div.fleximgright, div.flexleft, div.flexright{
-    flex: 1;
-}
+section.whatis div.flexbox {
+    align-items: center;
+} 
 
 div.fleximgright img, div.fleximgleft img {
     width: 100%;
@@ -91,16 +91,9 @@ div.flexright, div.flexleft {
     section.whatis div div {
         flex-basis: 100%;
         margin: 1em 0;
-    }
-
-    section.whatis div div.flexright, section.whatis div div.flexleft {
         padding: 0;
-        margin: 0;
     }
 
-    section.whatis div div.fleximgleft, section.whatis div div.fleximgright {
-        flex-basis: 33%;
-    }
     #overview {
         order: 1;
     }
