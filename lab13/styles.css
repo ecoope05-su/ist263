@@ -5,18 +5,18 @@ body {
     color: #37315E;
 }
 
-a { color: #70B97C; }
+a { color: #2b7938; }
 
 
-a:visited { color: #C5D86D; }
+a:visited { color: #37315E; }
 
 
-h1, h2 { color:#C5D86D; }
+h1, h2 { color:#2b7938;}
 
 
 nav {  
     
-    background-color: #70B97C;
+    background-color: #2b7938;
     color:#f2f8f6;
     padding: 10px;
     margin-bottom: 30px;  
@@ -26,7 +26,7 @@ nav {
 nav a, nav a:visited { color:#f2f8f6; }
 
 
-nav a:hover { background-color:#C5D86D; }
+nav a:hover { background-color:#37315E; }
 
 .float { float: left;
             margin-top: 8px;}
