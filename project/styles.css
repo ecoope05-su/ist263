@@ -9,12 +9,16 @@ h1 {
     font-size: 2em;
 }
 
-section.whatis {
+#whatis, #stats, #superlatives, #facts {
     margin: 0 2em;
 }
 
 img.header {
     width: 100%;
+}
+
+img {
+    max-width: 100%;
 }
 
 /*nav and footer styles, functionality of haburger nav based on a w3 schools example*/
@@ -25,7 +29,7 @@ nav, footer {
     box-sizing: border-box;
 }
 
-nav div.nav p {
+nav.nav p {
     margin: 0;
     padding: 0;
 
@@ -34,14 +38,14 @@ nav div.nav p {
     font-weight: 600;
 }
 
-nav div.nav a, nav div.nav a:visited {
+nav.nav a, nav.nav a:visited {
     color: white;
     padding-left: 10px;
     text-align: right;
     text-decoration: none;
 }
 
-nav div.nav a.onpage {
+nav.nav a.onpage {
     color: rgb(255, 205, 0);
 }
 
@@ -104,15 +108,15 @@ nav div.nav a.onpage {
     nav {
         padding: 2em;
     }
-    nav div.nav {
+    nav.nav {
         display: flex;
     }
 
-    nav div.nav p {
+    nav.nav p {
         flex: 1;
     }
 
-    nav div.nav a {
+    nav.nav a {
         float: right;
         text-align: right;
         width: fit-content;
@@ -135,7 +139,7 @@ div.flexbox {
     flex-wrap: wrap;
 }
 
-section.whatis div.flexbox {
+section#whatis div.flexbox {
     align-items: center;
 } 
 
@@ -156,7 +160,7 @@ div.flexright, div.flexleft {
 }
 
 @media only screen and (max-width:850px) {
-    section.whatis div div {
+    section#whatis div div {
         flex-basis: 100%;
         margin: 1em 0;
         padding: 0;
@@ -183,60 +187,60 @@ div.flexright, div.flexleft {
 }
 
 @media only screen and (min-width:850px) {
-    section.whatis div div  {
+    section#whatis div div  {
         flex-basis: 50%;
         box-sizing: border-box;
     }
 
-    section.whatis div.flexbox div.fleximgleft, section.whatis div.flexbox div.fleximgright {
+    section#whatis div.flexbox div.fleximgleft, section#whatis div.flexbox div.fleximgright {
         margin-bottom: -4px;
     }
 }
 
 /*underground lines styles*/
 
-section.lines div.flexbox{
+section#lines div.flexbox{
     display: flex;
     flex-wrap: wrap;
 }
 
-section.lines div div {
+section#lines div div {
     flex: 1;
     padding: 1em 2em;
 }
     
 
 @media only screen and (max-width:850px) {
-    section.lines {
+    section#lines {
         margin-top: 2em;
         margin-bottom: 0;
         padding: 1em 2em 0 2em;
         background-color: #dfdfdf;
     }
 
-    section.lines div div {
+    section#lines div div {
         flex-basis: 100%;
         margin: 1em 0;
     }
 
-    section.lines div div.jubilee {
+    section#lines div div.jubilee {
         flex-basis: 100%;
         margin: 1em 0 2em 0;
     }
-    section.lines div div.blank {
+    section#lines div div.blank {
         display: none;
     }
 }
 
 @media only screen and (min-width:850px) {
-    section.lines {
+    section#lines {
         margin-top: 2em;
         margin-bottom: 0;
         padding: 1em 2em 2em 2em;
         background-color: #dfdfdf;
     }
 
-    section.lines div div {
+    section#lines div div {
         flex-basis: 25%;
         box-sizing: border-box;
     }
@@ -298,10 +302,48 @@ section.lines div div {
 
 .victoria {
     background-color: rgb(0, 160, 223);
-    color: white;
+    color: rgb(0, 15, 159);
 }
 
 .jubilee {
     background-color: rgb(123, 134, 140);
+    color: rgb(0, 15, 159);
+}
+
+
+/*fact tables*/
+
+table {
+    border: rgb(225, 37, 27) solid 3px;
+    border-collapse: collapse;
+    border-style: hidden;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+}
+
+caption {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.25em;
+    padding: 1.5em 0 0.5em 0;
+    color: rgb(225, 37, 27);
+}
+
+.label, .value {
+    padding: 1em;
+}
+
+.label {
+    background-color: rgb(225, 37, 27);
     color: white;
+    border-bottom: white solid 3px;
+}
+
+.value {
+    color: rgb(225, 37, 27);
+    border-bottom: rgb(225, 37, 27) solid 3px;
+}
+
+#stats div {
+    flex: 1
 }

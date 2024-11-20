@@ -10,24 +10,32 @@
     <style>
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
-       a{
+        div {
+            display: flex;
+        }
+
+        a{
             background-color: palevioletred;
-            display: block;
+            
             margin: 10px;
             padding: 10px; 
         }
+
+
     </style>
 </head>
 
 <body>
-    
-    <nav>
+
+    <nav class="nav">
         <a href="index">Home</a>
-        <a href="index">Home</a>
-        <a href="index">Home</a>
+        <div class="subnav">
+            <a href="index">two</a>
+            <a href="index">three</a>
+        </div>
     </nav>
 
 </body>

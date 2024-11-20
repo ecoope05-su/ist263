@@ -5,171 +5,196 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--base code for hamburger menu sourced from w3schools-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vina+Sans&display=swap" rel="stylesheet">
+
     <title>Fun Facts</title>
+
+    <script>
+        function hamburger() {
+          var x = document.getElementById("nav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+    </script>
+
 </head>
 
 <body>
     
-    <nav>
-        <p>All About The London Underground</p>
-        <a href="index.html">Home</a>
-        <a href="facts.html">Facts</a>
-        <a href="map.html">The Tube Map</a>
+    <nav class="nav" id="nav">
+            <p>All About The London Underground</p>
+            <a href="index.html" class="link" id="home">Home</a>
+            <a href="facts.html" class="onpage link">Facts</a>
+            <a href="map.html" class="link">The Tube Map</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+              <i class="fa fa-bars"></i>
+            </a>
     </nav>
 
-
-    <section>
+    <main>
 
         <h1>The Underground in Numbers</h1>
 
-        <table>
+        <div id="stats" class="flexbox">
 
-            <tr>
-                <td>Opening Date</td>
-                <td>January 10, 1863</td>
-            </tr>
-    
-            <tr>
-                <td>Length of all the Lines</td>
-                <td>250 Miles</td>
-            </tr>
-    
-            <tr>
-                <td>Passengers per year</td>
-                <td>1.35 Billion</td>
-            </tr>
-    
-            <tr>
-                <td>Number of Elevators</td>
-                <td>202</td>
-            </tr>
-    
-            <tr>
-                <td>Number of Escalators</td>
-                <td>451</td>
-            </tr>
-    
-            <tr>
-                <td>Annual Miles Travelled</td>
-                <td>51.95 Million Miles</td>
-            </tr>
-    
-            <tr>
-                <td>Average Train Speed</td>
-                <td>20.5 Miles per Hour</td>
-            </tr>
-    
-        </table>
+            <table>
 
-    </section>
+                <caption>Quick Statistics</caption>
 
+                <tr>
+                    <td class="label">Opening Date</td>
+                    <td class="value">January 10, 1863</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Length of all the Lines</td>
+                    <td class="value">250 Miles</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Passengers per year</td>
+                    <td class="value">1.35 Billion</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Number of Elevators</td>
+                    <td class="value">202</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Number of Escalators</td>
+                    <td class="value">451</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Annual Miles Travelled</td>
+                    <td class="value">51.95 Million Miles</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Average Train Speed</td>
+                    <td class="value">20.5 Miles per Hour</td>
+                </tr>
+        
+            </table>
 
-    <section>
+            <table>
+                <caption>Train and Station Superlatives</caption>
 
-        <h1>Train and Station Superlatives</h1>
+                <tr>
+                    <td class="label">Longest Direct Route</td>
+                    <td class="value">The Central Line: Epping to East Ruislip (34.11 miles)</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Highest Station Above Sea Level</td>
+                    <td class="value">Amersham: 482 Feet</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Busiest Station</td>
+                    <td class="value">Waterloo: 100.3 Million Passengers per Year</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Station with the Most Platforms</td>
+                    <td class="value">Baker Street: 10</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Station with the Most Escalators</td>
+                    <td class="value">Waterloo: 23</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Station with the Longest Escalator</td>
+                    <td class="value">Angel: 197 Feet</td>
+                </tr>
+        
+                <tr>
+                    <td class="label">Station with the Shortest Escalator</td>
+                    <td class="value">Stratford: 13 Feet</td>
+                </tr>
+        
+            </table>
 
-        <table>
-
-            <tr>
-                <td>Longest Direct Route</td>
-                <td>The Central Line: Epping to East Ruislip (34.11 miles)</td>
-            </tr>
-    
-            <tr>
-                <td>Highest Station Above Sea Level</td>
-                <td>Amersham: 482 Feet</td>
-            </tr>
-    
-            <tr>
-                <td>Busiest Station</td>
-                <td>Waterloo: 100.3 Million Passengers per Year</td>
-            </tr>
-    
-            <tr>
-                <td>Station with the Most Platforms</td>
-                <td>Baker Street: 10</td>
-            </tr>
-    
-            <tr>
-                <td>Station with the Most Escalators</td>
-                <td>Waterloo: 23</td>
-            </tr>
-    
-            <tr>
-                <td>Station with the Longest Escalator</td>
-                <td>Angel: 197 Feet</td>
-            </tr>
-    
-            <tr>
-                <td>Station with the Shortest Escalator</td>
-                <td>Stratford: 13 Feet</td>
-            </tr>
-    
-        </table>
-
-        <img src="projectimages/worldwariishelter.jpg" alt="Citizens sheltering in Aldwych Tube Station during World War II">
-        <img src="projectimages/cannonstreet.png" alt="Train Departing Station">
-        <img src="projectimages/escalator.jpeg" alt="Busy Escalator at a Tube Station">
-
-    </section>
-
-    <section>
-
-        <h1>Fun Facts</h1>
-
-        <div class="float">
-
-            <ul>
-
-                <li>
-                    The nickname “The Tube” comes from the early days of the Central Line. The fare to ride was originally tuppence (two pennies) so Londoners refered to the line as the “Twopenny Tube” and the Tube part of the nickname stuck.
-                </li>
-
-                <li>
-                    The Central lines’ tunnels follow the old medieval street plan of London, hence why it curves back and forth a lot more than some of the more modern lines.
-                </li>
-
-                <li>
-                    Less than 10% of Underground Stations are south of the River Thames. This reflects a broader cultural, socioeconomic, and racial divide in the city.
-                </li>
-
-                <li>
-                    The escalators of the Underground travel the equivalent of the circumference of the world twice every week.
-                </li>
-
-                <li>
-                    Aldgate station was built over a plague pit with over 1,000 bodies.
-                </li>
-
-                <li>
-                    Part of the Piccadilly Line closed down during WWII to safeguard artifacts from the British Museum.
-                </li>
-
-                <li>
-                    Despite its famous name, only about 45% of the London Underground I actually underground.
-                </li>
-
-                <li>
-                    Some say that 20 minutes on the Northern Line exposes you to the equivalent amount of smog as one cigarette.
-                </li>
-
-                <li>
-                    It took over 28 months for TfL to audition and test new voices for the Underground’s announcement system.
-                </li>
-
-                <li>
-                    Today, there are roughly 49 abandoned stations, sometimes referred to as ghost stations.
-                </li>
-
-            </ul> 
-            
-            <img src="projectimages/stationentrance.png" class="floatimg" alt="Busy Station Entrance on a Rainy Day">                
-       
-            <div class="clear"></div>
-            
         </div>
 
-    </section>
+            <img src="projectimages/worldwariishelter.jpg" alt="Citizens sheltering in Aldwych Tube Station during World War II">
+            
+            <img src="projectimages/cannonstreet.png" alt="Train Departing Station">
+        
+            <img src="projectimages/escalator.jpeg" alt="Busy Escalator at a Tube Station">
+
+        <section id="facts">
+
+            <h1>Fun Facts</h1>
+
+            <div class="float">
+
+                <ul>
+
+                    <li>
+                        The nickname “The Tube” comes from the early days of the Central Line. The fare to ride was originally tuppence (two pennies) so Londoners refered to the line as the “Twopenny Tube” and the Tube part of the nickname stuck.
+                    </li>
+
+                    <li>
+                        The Central lines’ tunnels follow the old medieval street plan of London, hence why it curves back and forth a lot more than some of the more modern lines.
+                    </li>
+
+                    <li>
+                        Less than 10% of Underground Stations are south of the River Thames. This reflects a broader cultural, socioeconomic, and racial divide in the city.
+                    </li>
+
+                    <li>
+                        The escalators of the Underground travel the equivalent of the circumference of the world twice every week.
+                    </li>
+
+                    <li>
+                        Aldgate station was built over a plague pit with over 1,000 bodies.
+                    </li>
+
+                    <li>
+                        Part of the Piccadilly Line closed down during WWII to safeguard artifacts from the British Museum.
+                    </li>
+
+                    <li>
+                        Despite its famous name, only about 45% of the London Underground I actually underground.
+                    </li>
+
+                    <li>
+                        Some say that 20 minutes on the Northern Line exposes you to the equivalent amount of smog as one cigarette.
+                    </li>
+
+                    <li>
+                        It took over 28 months for TfL to audition and test new voices for the Underground’s announcement system.
+                    </li>
+
+                    <li>
+                        Today, there are roughly 49 abandoned stations, sometimes referred to as ghost stations.
+                    </li>
+
+                </ul> 
+                
+                <img src="projectimages/stationentrance.png" class="floatimg" alt="Busy Station Entrance on a Rainy Day">                
+        
+                <div class="clear"></div>
+                
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
 
