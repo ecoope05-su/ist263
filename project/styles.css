@@ -1,3 +1,6 @@
+/*css reset*/
+
+
 
 body {
     font-family: "Cabin", Helvetica, Arial, sans-serif;
@@ -322,6 +325,7 @@ table {
 }
 
 caption {
+
     text-align: left;
     font-weight: 500;
     font-size: 1.25em;
