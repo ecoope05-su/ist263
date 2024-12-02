@@ -8,7 +8,7 @@ body {
     color: rgb(0, 15, 159);
 }
 
-h1 {
+h1, h2.sectionhead {
     font-size: 2em;
 }
 
