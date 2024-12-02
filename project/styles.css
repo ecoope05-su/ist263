@@ -32,7 +32,7 @@ nav, footer {
     box-sizing: border-box;
 }
 
-i.fa fa-bars {
+.fa-bars p{
     display: none;
 }
 
