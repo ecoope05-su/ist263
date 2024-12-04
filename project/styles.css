@@ -355,3 +355,17 @@ caption {
 main#map {
     margin: 2em;
 }
+
+/*facts page images*/
+
+#imgflexbox {
+    justify-content: space-between;
+    margin: 2em 0;
+}
+.imgrow {
+    flex: 1;
+}
+
+.imgrow img {
+    width: 95%;
+}
