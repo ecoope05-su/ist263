@@ -352,10 +352,6 @@ caption {
     border-bottom: rgb(225, 37, 27) solid 3px;
 }
 
-#stats div {
-    flex: 1
-}
-
 main#map {
     margin: 2em;
 }
