@@ -355,3 +355,7 @@ caption {
 #stats div {
     flex: 1
 }
+
+main#map {
+    margin: 2em;
+}
