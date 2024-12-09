@@ -352,8 +352,17 @@ caption {
     border-bottom: rgb(225, 37, 27) solid 3px;
 }
 
-main#map {
-    margin: 2em;
+@media only screen and (max-width:850px) {
+    #table{
+        float: none;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    #table{
+        float: left;
+        margin-right: 2em;
+    }
 }
 
 /*facts page images*/
@@ -386,7 +395,12 @@ main#map {
     width: 40%;
 }
 
-/*bottom image*/
+/*map page*/
+
+
+main#map {
+    margin: 2em;
+}
 
 #full {
     width: 100%;
