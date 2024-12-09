@@ -369,30 +369,95 @@ caption {
 
 #imgflexbox {
     justify-content: space-between;
-    margin: 2em 0;
+    margin: 2em -1em;
 }
 .imgrow {
     flex: 1;
+    margin: 0 1em;
 }
 
 .imgrow img {
-    width: 95%;
+    width: 100%;
 }
 
 /*float list and image */
 
-.float {
-    float: left;
-    margin: 0;
+@media only screen and (max-width:850px) {
+    .float {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+        list-style-type: square;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    section#factbullets {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #imgflexbox {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+    
+    .floatimg {
+        margin: 2em 0;
+        width: 100%;
+    }
+
+    #switchone{
+        order: 1;
+        margin: 0;
+    }
+
+    #switchtwo{
+        order: 2;
+    }
+
+    #switchtwo img {
+        margin-top: 0;
+    }
+
 }
 
-.clear {
-    clear: both;
+@media only screen and (min-width:850px) {
+    .float {
+        width: 50%;
+        list-style-type: square;
+    }
+ 
+    .clear {
+        clear: both;
+    }
+    
+    .floatimg {
+
+        float: right;
+        margin-right: 2em;
+        margin: 0 0 2em 2em;
+        width: 60%;
+    }
 }
 
-.floatimg {
-    margin: 0;
-    width: 40%;
+main#facts h1 {
+    margin-bottom: 0;
+}
+ 
+ul {
+    padding-inline-start: 1.1em;
+    list-style-type: square;
+    margin-bottom: 2em;
+}
+
+li {
+    margin-bottom: 1em;
 }
 
 /*map page*/
