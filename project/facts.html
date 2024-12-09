@@ -27,13 +27,23 @@
             x.className = "nav";
           }
         }
+        
+        (() => {
+            const skip_lnk = document.querySelector('.skip_lnk');
+            if (!skip_lnk) return false;
+            skip_lnk.addEventListener('click', (e) => {
+                e.preventDefault();
+                const to_obj = document.getElementById(skip_lnk.href.split('#')[1]);
+                if (to_obj) to_obj.focus();
+            });
+            })();
     </script>
 
 </head>
 
 <body>
 
-    <a class="skip-main" href="#main">Skip to main content</a>
+    <a class=skip_lnk href="#main_h1">Skip to content</a>
     
     <nav class="nav" id="nav">
         <p>All About The London Underground</p>
@@ -49,7 +59,7 @@
 
         <section>
 
-            <h1 id="main" tabindex="-1">The Underground in Numbers</h1>
+            <h1 class="main_title" id="main_title" tabindex="-1">The Underground in Numbers</h1>
 
             <table class="float" id="table">
 

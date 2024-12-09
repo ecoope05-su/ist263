@@ -22,31 +22,26 @@ img {
 
 /*skip to main content button*/
 
-a.skip-main {
-    left:-999px;
-    position:absolute;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    z-index:-999;
-}
-a.skip-main:focus, a.skip-main:active {
+.skip_lnk {
+    position: absolute;
+    padding: .5rem 1rem;
     color: #fff;
-    background-color:#000;
-    left: auto;
-    top: auto;
-    width: 30%;
-    height: auto;
-    overflow:auto;
-    margin: 10px 35%;
-    padding:5px;
-    border-radius: 15px;
-    border:4px solid yellow;
-    text-align:center;
-    font-size:1.2em;
-    z-index:999;
-}
+    background-color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10;
+    transform: translate3d(.125rem, -5rem, 0);
+    transition: transform .3s ease-out;
+  }
+  .skip_lnk:focus {
+    transform: translate3d(.125rem, .125rem, 0);
+    outline: #fff solid .125rem;
+  }
+  @media print {
+    .skip_lnk {
+      display: none;
+    }
+  }
 
 
 /*nav and footer styles, functionality of haburger nav based on a w3 schools example*/
