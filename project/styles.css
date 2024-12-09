@@ -428,10 +428,6 @@ caption {
 }
 
 @media only screen and (min-width:850px) {
-    .float {
-        width: 50%;
-        list-style-type: square;
-    }
  
     .clear {
         clear: both;
