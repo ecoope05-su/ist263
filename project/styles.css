@@ -369,3 +369,19 @@ main#map {
 .imgrow img {
     width: 95%;
 }
+
+/*float list and image */
+
+.float {
+    float: left;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.floatimg {
+    margin: 0;
+    width: 40%;
+}
