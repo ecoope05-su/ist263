@@ -146,7 +146,7 @@ div.flexbox {
     flex-wrap: wrap;
 }
 
-section#whatis div.flexbox {
+section#whatis div.flexbox, main#map div.flexbox {
     align-items: center;
 } 
 
@@ -167,39 +167,39 @@ div.flexright, div.flexleft {
 }
 
 @media only screen and (max-width:850px) {
-    section#whatis div div {
+    section#whatis div div, main#map div div {
         flex-basis: 100%;
         margin: 1em 0;
         padding: 0;
     }
 
-    #overview {
+    #overview, #early {
         order: 1;
     }
-    #overviewimg {
+    #overviewimg, #earlyimg {
         order: 2;
     }
-    #history {
+    #history, #harry {
         order: 3;
     }
-    #historyimg {
+    #historyimg, #harryimg {
         order: 4;
     }
-    #join {
+    #join, #modern {
         order: 5;
     }
-    #joinimg {
+    #joinimg, #modernimg {
         order: 6;
     }
 }
 
 @media only screen and (min-width:850px) {
-    section#whatis div div  {
+    section#whatis div div, main#map div div  {
         flex-basis: 50%;
         box-sizing: border-box;
     }
 
-    section#whatis div.flexbox div.fleximgleft, section#whatis div.flexbox div.fleximgright {
+    section#whatis div.flexbox div.fleximgleft, section#whatis div.flexbox div.fleximgright, main#map div.flexbox div.fleximgleft, main#map div.flexbox div.fleximgright {
         margin-bottom: -4px;
     }
 }
@@ -384,4 +384,11 @@ main#map {
 .floatimg {
     margin: 0;
     width: 40%;
+}
+
+/*bottom image*/
+
+#full {
+    width: 100%;
+    margin-top: 2em;
 }
